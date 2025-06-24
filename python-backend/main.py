@@ -3,6 +3,11 @@ from __future__ import annotations as _annotations
 import random
 from pydantic import BaseModel
 import string
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
 
 from agents import (
     Agent,
